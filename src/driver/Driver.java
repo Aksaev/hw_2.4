@@ -1,8 +1,9 @@
 package driver;
 
+import transport.Competing;
 import transport.Transport;
 
-public abstract class Driver<T extends Transport> {
+public abstract class Driver<T extends Transport & Competing> {
     private final String fullName;
     private final String category;
     private final int drivingExperience;
